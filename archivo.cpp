@@ -43,7 +43,15 @@ int main() {
     cin >> num1 >> num2;
     cout << "Resultado: " << pow(num1, num2) << endl;
     break;
-    
+    case 'r':
+    cout << "Ingrese un numero: ";
+    cin >> num1;
+    if (num1 >= 0)
+        cout << "Resultado: " << sqrt(num1) << endl;
+    else
+        cout << "Error: no se puede calcular la raíz cuadrada de un número negativo.\n";
+    break;
+
     }
 
     return 0;
