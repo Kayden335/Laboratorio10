@@ -24,7 +24,21 @@ int main() {
       cin >> num1 >> num2;
       cout << "Resultado: " << num1 - num2 << endl;
      break;
-            
+      case '*':
+    cout << "Ingrese dos numeros: ";
+    cin >> num1 >> num2;
+    cout << "Resultado: " << num1 * num2 << endl;
+    break;
+
+    case '/':
+    cout << "Ingrese dos numeros: ";
+    cin >> num1 >> num2;
+    if (num2 != 0)
+        cout << "Resultado: " << num1 / num2 << endl;
+    else
+        cout << "Error: Division por cero\n";
+    break;
+      
     }
 
     return 0;
