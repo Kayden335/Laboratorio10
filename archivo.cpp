@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double num1, num2;
+    char operacion;
+
+    cout << "Ingrese la operacion (+, -, *, /, ^, r, l, n): ";
+    cin >> operacion;
+
+    switch (operacion) {
+        // casos se implementarán en los siguientes pasos
+        default:
+            cout << "Operacion no reconocida.\n";
+      case '+':
+      cout << "Ingrese dos numeros: ";
+      cin >> num1 >> num2;
+      cout << "Resultado: " << num1 + num2 << endl;
+       break;
+
+     case '-':
+     cout << "Ingrese dos numeros: ";
+      cin >> num1 >> num2;
+      cout << "Resultado: " << num1 - num2 << endl;
+     break;
+            
+    }
+
+    return 0;
+}
