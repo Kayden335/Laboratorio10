@@ -60,6 +60,14 @@ int main() {
      else
         cout << "Error: logaritmo indefinido para números <= 0.\n";
     break;
+     case 'n':
+     cout << "Ingrese un numero: ";
+     cin >> num1;
+     if (num1 > 0)
+        cout << "Resultado: " << log(num1) << endl;
+     else
+        cout << "Error: logaritmo natural indefinido para números <= 0.\n";
+    break;
 
  
     }
