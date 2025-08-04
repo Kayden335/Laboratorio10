@@ -37,21 +37,31 @@ int main() {
         cout << "Resultado: " << num1 / num2 << endl;
     else
         cout << "Error: Division por cero\n";
-    break;
+   break;
       case '^':
-    cout << "Ingrese base y exponente: ";
-    cin >> num1 >> num2;
-    cout << "Resultado: " << pow(num1, num2) << endl;
-    break;
-    case 'r':
-    cout << "Ingrese un numero: ";
-    cin >> num1;
-    if (num1 >= 0)
+     cout << "Ingrese base y exponente: ";
+     cin >> num1 >> num2;
+     cout << "Resultado: " << pow(num1, num2) << endl;
+     break;
+     case 'r':
+     cout << "Ingrese un numero: ";
+     cin >> num1;
+     if (num1 >= 0)
         cout << "Resultado: " << sqrt(num1) << endl;
-    else
+     else
         cout << "Error: no se puede calcular la raíz cuadrada de un número negativo.\n";
+     break;
+
+     case 'l':
+     cout << "Ingrese un numero: ";
+     cin >> num1;
+     if (num1 > 0)
+        cout << "Resultado: " << log10(num1) << endl;
+     else
+        cout << "Error: logaritmo indefinido para números <= 0.\n";
     break;
 
+ 
     }
 
     return 0;
