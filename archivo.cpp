@@ -38,7 +38,12 @@ int main() {
     else
         cout << "Error: Division por cero\n";
     break;
-      
+      case '^':
+    cout << "Ingrese base y exponente: ";
+    cin >> num1 >> num2;
+    cout << "Resultado: " << pow(num1, num2) << endl;
+    break;
+    
     }
 
     return 0;
